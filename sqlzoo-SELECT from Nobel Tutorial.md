@@ -77,14 +77,16 @@ WHERE winner = 'PETER GRÜNBERG';
 SELECT *
 FROM nobel
 WHERE winner = 'Eugene O''Neill'
-```13. -> List the winners, year and subject where the winner starts with Sir. 
+```
+13. -> List the winners, year and subject where the winner starts with Sir. 
 Show the the most recent first, then by name order.
 ```ruby
 SELECT winner,yr,subject
 FROM nobel
 WHERE winner LIKE 'Sir%'
 ORDER BY yr DESC, winner;
-```14. -> Show the 1984 winners and subject ordered by subject and winner name; but list Chemistry and Physics last.
+```
+14. -> Show the 1984 winners and subject ordered by subject and winner name; but list Chemistry and Physics last.
 ```ruby
 SELECT winner, subject
 FROM nobel
